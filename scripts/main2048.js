@@ -6,10 +6,10 @@ var hasConflicted = []
 var score = 0
 
 // 位置
-// var startX = 0
-// var startY = 0
-// var endX = 0
-// var endY = 0
+var startX = 0
+var startY = 0
+var endX = 0
+var endY = 0
 
 $(document).ready(function(){
     prepareForMobile()
@@ -25,20 +25,20 @@ var prepareForMobile = function() {
 
         return
     }
-    // 仅在操作页面阻止滑动
+    // 在操作页面阻止滑动
     document.ontouchmove = function(event) {
         if (!event.elementIsEnabled) {
             event.preventDefault()
         }
     }
-    // 监听touchstart
+    // 监听 touchstart
     document.addEventListener('touchstart', function(event){
         // event.preventDefault()
         startX = event.touches[0].pageX
         startY = event.touches[0].pageY
         // console.log(startx);
     })
-    // 监听touchend
+    // 监听 touchend
     document.addEventListener('touchend', function(event){
         // event.preventDefault()
         endX = event.changedTouches[0].pageX
@@ -82,6 +82,7 @@ var prepareForMobile = function() {
         // console.log(endx);
     })
 
+    // 调整大小
     $('header').css('height', documentHeight * 0.15)
 
     $('#grid-container').css('width', gridContainerWidth - cellSpace * 2)
@@ -174,7 +175,7 @@ var generateOneNumber = function() {
         randy = parseInt(Math.floor(Math.random() * 4))
     }
 
-    // 随机数字
+    // 随机生成 2 和 4
     var randNumber = Math.random() < 0.5 ? 2 : 4
     // console.log('randNumber :', randNumber);
     // 显示数字
