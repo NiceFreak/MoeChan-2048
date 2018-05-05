@@ -66,9 +66,9 @@ header p {
     background-size: 100% 100%;
     border-radius: 6px;
     font-family: Arial;
-    font-size: 60px;
+    font-size: 30px;
     font-weight: bold;
-    line-height: 100px;
-    text-align: center;
+    /* line-height: 100px; */
+    text-align: right;
     text-shadow: 1px 1px 1px #666;
 }

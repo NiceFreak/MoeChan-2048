@@ -24,11 +24,11 @@ var getNumberColor = function(number) {
 // 设置字体大小
 var getNumberSize = function(number) {
     if (number > 512) {
-        return cellSideLength * 0.4 + 'px'
+        return cellSideLength * 0.2 + 'px'
     } else if (number === 512) {
-        return cellSideLength * 0.5 + 'px'
+        return cellSideLength * 0.3 + 'px'
     } else {
-        return cellSideLength * 0.6 + 'px'
+        return cellSideLength * 0.4 + 'px'
     }
 }
 

@@ -154,7 +154,7 @@ var updateBoardView = function() {
             hasConflicted[i][j] = false
         }
     }
-    $('.number-cell').css('line-height', cellSideLength + 'px')
+    // $('.number-cell').css('line-height', cellSideLength + 'px')
     $('.number-cell').css('border-radius', cellSideLength * 0.05)
 }
 
