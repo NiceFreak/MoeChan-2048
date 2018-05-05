@@ -15,9 +15,9 @@ var getPosLeft = function(i, j) {
 
 // 设置数字颜色
 var getNumberColor = function(number) {
-    if (number <= 4) {
-        return '#776e65'
-    }
+    // if (number <= 4) {
+    //     return '#776e65'
+    // }
     return 'white'
 }
 
@@ -32,22 +32,22 @@ var getNumberSize = function(number) {
     }
 }
 
-// 设置背景颜色
-var getNumberBackgroundColor = function(number) {
+// 设置背景图片
+var getNumberBackgroundImage = function(number) {
     var color = {
-        2: '#eee4da',
-        4: '#ede0c8',
-        8: '#f2b179',
-        16: '#f59563',
-        32: '#f67c5f',
-        64: '#f65e3b',
-        128: '#edcf72',
-        256: '#edcc61',
-        512: '#9c0',
-        1024: '#33b5e5',
-        2048: '#09c',
-        4096: '#a6c',
-        8192: '93c'
+        2: 'url(images/02.jpg)',
+        4: 'url(images/04.jpg)',
+        8: 'url(images/08.jpg)',
+        16: 'url(images/16.jpg)',
+        32: 'url(images/32.jpg)',
+        64: 'url(images/64.jpg)',
+        128: 'url(images/128.jpg)',
+        256: 'url(images/256.jpg)',
+        512: 'url(images/512.jpg)',
+        1024: 'url(images/1024.jpg)',
+        2048: 'url(images/2048.jpg)',
+        4096: 'url(images/4096.jpg)',
+        8192: 'url(images/8192.jpg)'
     }
     return color[number]
 }

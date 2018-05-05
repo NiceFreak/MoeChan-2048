@@ -1,6 +1,6 @@
 var showNumberWithAnimation = function(i, j, randNumber) {
     var numberCell = $(`#number-cell-${i}-${j}`)
-    numberCell.css('background-color', getNumberBackgroundColor(randNumber))
+    numberCell.css('background-image', getNumberBackgroundImage(randNumber))
     numberCell.css('color', getNumberColor(randNumber))
     numberCell.css('font-size', getNumberSize(board[i][j]))
     numberCell.text(randNumber)

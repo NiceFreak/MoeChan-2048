@@ -148,7 +148,7 @@ var updateBoardView = function() {
                 theNemberCell.css('top', getPosTop(i, j))
                 theNemberCell.css('left', getPosLeft(i, j))
                 theNemberCell.css('font-size', getNumberSize(board[i][j]))
-                theNemberCell.css('background-color', getNumberBackgroundColor(board[i][j]))
+                theNemberCell.css('background-image', getNumberBackgroundImage(board[i][j]))
                 theNemberCell.css('color', getNumberColor(board[i][j]))
             }
             hasConflicted[i][j] = false
